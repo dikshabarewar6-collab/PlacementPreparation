@@ -1,0 +1,64 @@
+#Q1= Data types in python
+a = 10
+b = 20.00
+c = 30 + 2j
+d = True
+e = "Diksha"
+f = [1,2,3,4,5]
+g = (1,2,3,4,5)
+h = {1,3,6,5}
+i = {'b' : 1, 'a' : 5, 'h': 4}
+j = None
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+print(type(h))
+print(type(i))
+print(type(j))
+
+
+#Q2= mutable objects
+list = [10,20,30]
+list[0] = 100
+print(list)
+
+
+#Q3= immutable objects
+str = "Diksha"
+str[0] = "K"
+print(str)
+
+
+
+#Q4 = == vs is operator
+a = [1,2,3]
+b = [1,2,3]
+print(a==b)  #true because both have same values
+print(a is b) #false because they are different objects in memory
+
+c=a
+print(a==c)
+print(a is c)
+
+
+#Q5=list vs tuple
+list = [10,20,30,40]
+tuple=(10,20,30,40)
+
+list[0]= 1
+tuple[0]= 1   # typeerror
+print(list,tuple)
+
+#Q6= Student profile
+name = input("Enter your name:")
+age = int(input("Enter your age:"))
+branch = input("Enter your branch:")
+marks = float(input("Enter your marks:"))
+subjects = input("Enter your subjects separated by commas:").split(',')
+skills = input("Enter your skills separated by commas:").split(',')
+print(f"Student Profile: \nName = {name}, \nAge = {age}, \nBranch = {branch}, \nMarks = {marks}, \nSubjects = {subjects}, \nSkills = {skills}")
